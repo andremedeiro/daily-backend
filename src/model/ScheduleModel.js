@@ -1,7 +1,5 @@
 const mongoose = require('../config/database');
 const Schema = mongoose.Schema;
-require('mongoose-currency').loadType(mongoose);
-var Currency = mongoose.Types.Currency;
 
 const ScheduleSchema = new Schema ({
     date: {type: Date, required: true},
