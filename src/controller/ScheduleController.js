@@ -139,20 +139,6 @@ class ScheduleController {
             })
     }
 
-    async check_its_free(start, end, court) {
-
-        its_free = true;
-
-        let schedules = await ScheduleModel.find({
-                            'date' : {'$gt': start, '$lt': end},
-                            'court' : { '$eq': court}
-                        })
-        
-        
-
-    }
-
-
 }
 
 module.exports = new ScheduleController();
