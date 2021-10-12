@@ -11,7 +11,7 @@ router.put('/:id', ScheduleValidation, ScheduleController.update);
 router.get('/:id', ScheduleController.show);
 router.delete('/:id', ScheduleController.delete);
 
-router.get('/filter/busy', TwoDatesValidation, ScheduleController.busy_beetween_dates);
-router.get('/filter/free', TwoDatesValidation, ScheduleController.free_beetween_dates);
+router.post('/busy', TwoDatesValidation, ScheduleController.busy_beetween_dates);
+router.post('/free', TwoDatesValidation, ScheduleController.free_beetween_dates);
 
 module.exports = router;
