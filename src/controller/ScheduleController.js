@@ -63,9 +63,7 @@ class ScheduleController {
                 
                 let free_schedule = {
                     start: addHours(day_start, j),
-                    end: addHours(day_start, j + duration),
-                    start1: format(addHours(day_start, j), 'HH:mm'),
-                    end1: format(addHours(day_start, j + duration), 'HH:mm'),
+                    end: addHours(day_start, j + duration)
                 }
 
                 if (!isAfter(free_schedule.end, day_end)) {
