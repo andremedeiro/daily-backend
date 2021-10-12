@@ -11,9 +11,11 @@
   "author": "André Martins",
   "license": "ISC",
   "dependencies": {
+    "date-fns": "^2.25.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^6.0.10"
+    "mongoose": "^6.0.10",
+    "mongoose-currency": "^0.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
