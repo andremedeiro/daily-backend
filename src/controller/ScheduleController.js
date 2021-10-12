@@ -1,6 +1,5 @@
 const ScheduleModel = require('../model/ScheduleModel');
 const { differenceInCalendarDays, addDays, endOfDay, addMilliseconds, differenceInHours, startOfDay, setHours, isAfter, addHours, format, isSameHour } = require('date-fns');
-const { fr } = require('date-fns/locale');
 
 class ScheduleController {
 
